@@ -25,12 +25,15 @@
 		<li><a><a href="/contact-us">Contact Us </a></li> 
 		</ul> 
 		</div>
-		<div id="ftwitter"><h2>TWITTER FEED</h2>
+		<div id="ftwitter">
+		<h2>TWITTER FEED</h2>
 		<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
 			<?php dynamic_sidebar( 'sidebar-4' ); ?>
 		<?php endif; ?>
 		</div>
 		<div id="fsignup">
+		<h2>SIGN UP</h2>
+		<?php echo do_shortcode('[form form-5]'); ?>
 		</div>
 	</section>
 	</footer><!-- #colophon -->

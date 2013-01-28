@@ -181,6 +181,12 @@ img {
 	src: url('Hero.otf');
 } 
 
+@font-face { 
+	font-family: Hero-light;
+	src: url('Hero-light.otf');
+} 
+
+
 /* =Repeatable patterns
 -------------------------------------------------------------- */
 
@@ -252,7 +258,7 @@ li.bypostauthor cite span {
 	font-size: 0.785714286rem;
 	line-height: 1.428571429;
 	font-weight: normal;
-	color: #7c7c7c;
+	color: #ca006c;
 	background-color: #e6e6e6;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
@@ -1790,6 +1796,45 @@ footer a {
 	color: #ddd;
 }
 
+#fsignup {
+	float: left;
+	width: 290px;
+}
+
+#fsignup fieldset {
+	padding: 0;
+	border: 0;
+}
+
+#fsignup legend {
+	margin: 0 0 16px 0;
+	border: 0;
+}
+
+#fsignup input {
+	width: 150px !important;
+}
+.fm-form legend {
+	font family: hero, sans-serif;
+}
+
+.fm-form fieldset {
+	background-color: #f6f6f6;
+	color: #636466;
+	border: none;
+}
+
+.fm-form input {
+	border-radius: 2px 2px 2px 2px;
+	
+}
+
+.fm-form input textarea {
+	width:50% !important;
+}
+
+
+
 .buy-list .eshop li {
 	margin: 0;
 	float: left;
@@ -1807,11 +1852,40 @@ footer a {
 	height: 3em;
 	margin: 4px;
 	text-align: center;
+	
 }
 
 .buy-list .eshop li .itemref img {
-	float: none;
+	float: above;
 	margin: 4px 0 0;
+}
+
+.sub-nav .eshop thead th {
+	text-align: left;
+	color: #ca006c;
+	padding: 2px 4px;
+}
+
+.sub-nav .eshop th {
+	color: #ca006c;
+}
+
+.sub-nav .eshop abbr {
+	color: #ca006c;
+}
+
+.sub-nav .eshop td,
+.sub-nav .eshop td a,
+.sub-nav .eshop td span {
+	color: #ca006c;
+}
+
+.sub-nav .eshop input[type="submit"] {
+	background-color: #ca006c;
+}
+
+.sub-nav #unset {
+	display: none;
 }
 
 
@@ -2017,8 +2091,8 @@ img#wpstats {
 	.main-navigation .current-menu-ancestor > a,
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
-		color: #636363;
-		font-weight: bold;
+		color: #ca006c;
+		
 	}
 	.menu-mm1-container {
 		border-bottom: 1px solid #ededed;
