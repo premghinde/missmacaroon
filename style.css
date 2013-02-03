@@ -1735,6 +1735,7 @@ a.comment-edit-link:hover {
 	color: #636466;
 	text-align: center;
 	border-radius: 8px;
+	margin-top: 16px;
 }
 
 #welcome p {
@@ -1808,9 +1809,9 @@ a.comment-edit-link:hover {
 	font-family: Hero, sans-serif;
 	color: #939598;
 	float: left;
-	padding: 14px 20px 18px 80px;
+	padding: 14px 20px 10px 80px;
 	text-decoration: none;
-	min-height: 50px;
+	min-height: 60px;
 }
 
 #followus .facebook {
@@ -2028,24 +2029,39 @@ footer a {
 	margin: 0;
 	float: left;
 	width: 177px;
-	height: 280px;
+	height: 245px;
 	clear: none;
 	border: 1px solid #e0e0e0;
 	border-radius: 6px;
 	margin: 0 0 8px 8px;
 	box-shadow: 0px 1px 4px rgba (0, 0, 0, 0.2);
-	}
+	position: relative;
+}
 
 .buy-list .eshop li .itemref img {
 	margin: 4px auto;
 	float: none;
+	box-shadow: none;
+	border-bottom: 1px solid #ccc;
 }
 
 .buy-list .eshop li .itemref {
 	font-size: 1em;
-	height: 3em;
 	margin: 4px;
 	text-align: center;
+}
+
+.buy-list .eshop li > .itemref {
+	height: 205px;
+}
+
+.buy-list .eshop li > .itemref:first-child {
+	position: absolute;
+	width: 169px;
+	top: 170px;
+	line-height: 1.2rem;
+	height: auto;
+	text-align: left;
 }
 
 .buy-list .eshop .ep_price {
@@ -2185,7 +2201,8 @@ img#wpstats {
 		width: 160px;
 		float: left;
 	}
-	#followuse li {
+	#followuse li,
+	#followus li {
 		width: 49%;
 	}
 	.thethe_image_slider {
@@ -2225,7 +2242,8 @@ img#wpstats {
 	#ourstory p {
 		margin-right: 0;
 	}
-	#followuse li {
+	#followuse li,
+	#followus li {
 		width: 99%;
 	}
 }
