@@ -186,6 +186,11 @@ img {
 	src: url('Hero-light.otf');
 } 
 
+@font-face { 
+	font-family: Bebas;
+	src: url('BebasNeue.otf');
+} 
+
 
 /* =Repeatable patterns
 -------------------------------------------------------------- */
@@ -1001,6 +1006,7 @@ footer.entry-meta {
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 	color: #757575;
+	background-color: #fff;
 }
 .single-author .entry-meta .by-author {
 	display: none;
@@ -1439,7 +1445,7 @@ a.comment-edit-link:hover {
 }
 
 .blog .wrapper {
-	width: 900px;
+	width: 944px;
 	margin: auto;
 }
 
@@ -1567,6 +1573,10 @@ a.comment-edit-link:hover {
 	background: transparent url(img/sidelink/item-64.png) no-repeat 0 0;
 }
 
+.page-item-68 {
+	background: transparent url(img/sidelink/item-68.png) no-repeat 0 0;
+}
+
 .page-item-75 {
 	background: transparent url(img/sidelink/item-75.png) no-repeat 0 0;
 }
@@ -1641,7 +1651,8 @@ a.comment-edit-link:hover {
 #link-list {
 	height: 385px;
 	width: 900px;
-	background-image: url(home-circles.png);
+	height: 100%;
+	overflow: hidden;
 }
 
 #link-list li {
@@ -1652,15 +1663,56 @@ a.comment-edit-link:hover {
 	list-style: none;
 }
 
+#link-list .tasting {
+	background: #fff url(img/hp/buttons.png) no-repeat -190px 0;
+}
+
+#link-list .tasting:hover {
+	background: #fff url(img/hp/hbuttons.jpg) no-repeat -190px 0;
+}
+
+#link-list .gifts {
+	background: #fff url(img/hp/buttons.png) no-repeat -790px 0;
+}
+
+#link-list .gifts:hover {
+	background: #fff url(img/hp/hbuttons.jpg) no-repeat -790px 0;
+}
+
+#link-list .aims {
+	background: #fff url(img/hp/buttons.png) no-repeat -1390px 0;
+}
+
+#link-list .aims:hover {
+	background: #fff url(img/hp/hbuttons.jpg) no-repeat -1390px 0;
+}
+
+#link-list .home {
+	background: #fff url(img/hp/buttons.png) no-repeat -1990px 0;
+}
+
+#link-list .home:hover {
+	background: #fff url(img/hp/hbuttons.jpg) no-repeat -1990px 0;
+}
+
 #link-list a {
 	float: left;
-	padding: 302px 15px 0;
+	padding: 220px 16px 16px;
 	width: 195px;
 	color: #919297;
 	text-decoration: none;
 	text-align: center;
 	font-size: 14px;
 	font-style: italic;
+}
+
+#link-list h3 {
+	font-family: Bebas, sans-serif;
+	font-style: normal;
+	margin: 0;
+	position: relative;
+	top: 220px;
+	text-align: center;
 }
 
 #welcome {
@@ -1694,7 +1746,7 @@ a.comment-edit-link:hover {
 }
 
 #ourstory p {
-	width: 200px;
+	margin-right: 300px;
 }
 
 #quote {
@@ -1780,7 +1832,7 @@ a.comment-edit-link:hover {
 	font-family: Hero, sans-serif;
 	color: #939598;
 	float: left;
-	padding: 14px 20px 18px 80px;
+	padding: 14px 20px 10px 80px;
 	text-decoration: none;
 	min-height: 50px;
 }
@@ -1825,7 +1877,7 @@ footer a {
 
 #flinks {
 	float: left;
-	width: 290px;
+	width: 230px;
 	margin-right: 10px;
 }
 
@@ -1837,8 +1889,8 @@ footer a {
 
 #ftwitter {
 	float: left;
-	width: 290px;
-	margin-right: 10px;
+	width: 280px;
+	margin-right: 70px;
 }
 
 #ftwitter li {
@@ -1895,7 +1947,7 @@ footer a {
 #fsignup label {
 	font-family: georgia, sans-serif;
 	width: 110px !important;
-	padding: 7px;
+	padding: 5px 4px 6px;
 }
 
 #fsignup input[type="submit"] {
@@ -2074,6 +2126,12 @@ img#wpstats {
 	#buybanner {
 		display: none;
 	}
+	#link-list {	
+		width: auto;
+	}
+	#link-list li {	
+		width: 48%;
+	}
 	.sub-nav {
 		width: auto;
 	}
@@ -2094,10 +2152,27 @@ img#wpstats {
 		width: auto;
 		margin: 0 10px;
 	}
+	footer section {
+		width: auto;
+	}
+	#flinks,
+	#ftwitter,
+	#fsignup,
+	#welcome,
+	#ourstory,
+	#followus {
+		float: none;
+		width: auto;
+		margin: 10px;
+	}
+	#flinks li {
+		width: 160px;
+		float: left;
+	}
 }
 
 /* Maximum width of 500 pixels. This is low res mobile related overrides*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
 	#masthead h1 {
 		height: 26px;
 		width: 320px;
@@ -2110,8 +2185,17 @@ img#wpstats {
 		float: none;
 		font-size: 1.8rem;
 	}
+	#link-list li {	
+		width: 100%;
+	}
 	.sub-menu {
 		display: none;
+	}
+	#ourstory {
+		background-image: none;
+	}
+	#ourstory p {
+		margin-right: 0;
 	}
 }
 
@@ -2138,7 +2222,7 @@ img#wpstats {
 	}
 	.site-content {
 		float: left;
-		width: 65.104166667%;
+		width: 70%;
 	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,
@@ -2147,7 +2231,8 @@ img#wpstats {
 	}
 	.widget-area {
 		float: right;
-		width: 26.041666667%;
+		width: 23%;
+		margin-right: 3%;
 	}
 	.site-header h1,
 	.site-header h2 {
@@ -2260,8 +2345,12 @@ img#wpstats {
 		display: none;
 	}
 	.entry-header .entry-title {
-		font-size: 22px;
-		font-size: 1.571428571rem;
+		text-transform:uppercase;
+		background-color: #ca006c;
+		color: #ffffff;
+		font-size: 2.5rem;
+		padding: 18px 24px;
+		font-family: Hero, sans-serif; 
 	}
 	#respond form input[type="text"] {
 		width: 46.333333333%;
