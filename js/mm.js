@@ -19,5 +19,9 @@ if ($('#subnav').length) {
 	$('#subnav a').wrapInner('<span />');
 }
 
+if (window.outerWidth < 650) {
+	$('.fm-form *').removeAttr('style');
+}
+
 });
 

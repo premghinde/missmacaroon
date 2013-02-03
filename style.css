@@ -1997,9 +1997,8 @@ footer a {
 	border:1px solid rgb(202, 0, 108);
 	margin-right:0em;
 	background-color: #fff;
-	border-right: none;
 	border-radius: 2px 0px 0px 2px;
-	padding: 2px;
+	padding: 0;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding-left: 10px;
@@ -2137,7 +2136,7 @@ img#wpstats {
 		font-size: 1.6em;
 	}
 	.entry-content {
-		margin: 0;
+		margin: 0 24px;
 	}
 	.sub-menu {
 		display: none;
@@ -2245,6 +2244,9 @@ img#wpstats {
 	#followuse li,
 	#followus li {
 		width: 99%;
+	}
+	.fm-form label {
+		width: 120px;
 	}
 }
 
