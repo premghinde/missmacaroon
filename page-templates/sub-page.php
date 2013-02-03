@@ -21,6 +21,7 @@ get_header(); ?>
 
 		</div><!-- #content -->
 		<div id="subnav">
+		<ul>
 		<?php
 			$output = wp_list_pages('echo=0&depth=1&title_li=<h2>Top Level Pages </h2>' );
 			if (is_page( )) {
@@ -36,6 +37,7 @@ get_header(); ?>
 			}
 			echo $output;
 			?>
+		</ul>
 		</div><!-- #secondary -->
 	</div><!-- #primary -->
 

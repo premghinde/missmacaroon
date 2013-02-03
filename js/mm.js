@@ -6,7 +6,7 @@ $('#menu-mm1')
 		var $this = $(this).index(),
 			banner = $('#masthead h1'),
 			matrix = [null,'wedding',null,'homebaker','social',null];
-		if (!!matrix[$this].length) {
+		if (!!matrix[$this]) {
 			banner.addClass(matrix[$this]);
 		}
 	})
@@ -14,4 +14,10 @@ $('#menu-mm1')
 		$('#masthead h1')[0].className = '';
 	});
 
+if ($('#subnav').length) {
+	$($('#subnav > ul > li')[0].childNodes[0]).remove();
+	$('#subnav a').wrapInner('<span />');
+}
+
 });
+

@@ -427,7 +427,7 @@ img.wp-smiley,
 
 #masthead h1 span {
 	position: absolute;
-	top: -99em;
+	top: -999em;
 }
 
 /* Navigation */
@@ -1462,7 +1462,7 @@ a.comment-edit-link:hover {
 
 #buybanner span {
 	position: absolute;
-	top: -99em;
+	top: -999em;
 }
 
 .sub-nav {
@@ -1483,6 +1483,10 @@ a.comment-edit-link:hover {
 	top: -10px;
 }
 
+.sub-nav #subnav .pagenav {
+	list-style: none;
+}
+
 .sub-nav #subnav li a {
 	display: block;
 	height: 160px;
@@ -1490,11 +1494,12 @@ a.comment-edit-link:hover {
 }
 
 .sub-nav #subnav li span {
-	position: absolute;
-	top: -99em;
+	position: relative;
+	top: -999em;
 }
 
-.sub-nav h1.entry-title {
+.sub-nav h1.entry-title,
+.full-width h1.entry-title {
 	text-transform:uppercase;
 	background-color: #ca006c;
 	color: #ffffff;
@@ -1515,12 +1520,12 @@ a.comment-edit-link:hover {
 	color: #f7aabd;
 }
 
-.sub-nav h2 {
-		font-size: 1.5rem;
+.sub-nav #main h2 {
+	font-size: 1.5rem;
 	padding: 0px 0px;
 	font-family: Hero, sans-serif; 
 }
-.sub-nav h3{
+.sub-nav #main h3{
 	text-transform:uppercase;
 	color: #ca006c;
 	font-size: 2.5rem;
@@ -1573,6 +1578,10 @@ a.comment-edit-link:hover {
 	background: transparent url(img/sidelink/item-64.png) no-repeat 0 0;
 }
 
+.page-item-66 {
+	background: transparent url(img/sidelink/item-66.png) no-repeat 0 0;
+}
+
 .page-item-68 {
 	background: transparent url(img/sidelink/item-68.png) no-repeat 0 0;
 }
@@ -1599,6 +1608,10 @@ a.comment-edit-link:hover {
 
 .page-item-86 {
 	background: transparent url(img/sidelink/item-86.png) no-repeat 0 0;
+}
+
+.page-item-363 {
+	background: transparent url(img/sidelink/item-363.png) no-repeat 0 0;
 }
 
 .home .entry-content {
@@ -2014,7 +2027,7 @@ footer a {
 .buy-list .eshop li {
 	margin: 0;
 	float: left;
-	width: 180px;
+	width: 177px;
 	height: 280px;
 	clear: none;
 	border: 1px solid #e0e0e0;
@@ -2024,11 +2037,8 @@ footer a {
 	}
 
 .buy-list .eshop li .itemref img {
-	float: left;
-	margin: 4px 0 0;
-	box-shadow: none !important;
-	padding: 0px 0px 0px 15px !important;
-	
+	margin: 4px auto;
+	float: none;
 }
 
 .buy-list .eshop li .itemref {
@@ -2038,8 +2048,6 @@ footer a {
 	text-align: center;
 }
 
-
-
 .buy-list .eshop .ep_price {
 	color: #ca006c;
 	font-weight: bold;
@@ -2047,7 +2055,6 @@ footer a {
 	display: inline-block;
 	vertical-align: 0px;
 }
-
 
 .sub-nav .eshop thead th {
 	text-align: left;
@@ -2075,6 +2082,11 @@ footer a {
 
 .sub-nav #unset {
 	display: none;
+}
+
+.eshop select,
+.eshop input {
+	font-size: 1rem;
 }
 
 
@@ -2107,6 +2119,9 @@ img#wpstats {
 		width: 45%;
 		float: left;
 		font-size: 1.6em;
+	}
+	.entry-content {
+		margin: 0;
 	}
 	.sub-menu {
 		display: none;
@@ -2147,6 +2162,7 @@ img#wpstats {
 	}
 	.sub-nav #subnav li {
 		float: left;
+		
 	}
 	#home-content {
 		width: auto;
@@ -2169,6 +2185,18 @@ img#wpstats {
 		width: 160px;
 		float: left;
 	}
+	#followuse li {
+		width: 49%;
+	}
+	.thethe_image_slider {
+		display: none;
+	}
+	.eshopform select,
+	.eshopform input {
+		font-size: 1.2rem;
+		width: 99%;
+	}
+
 }
 
 /* Maximum width of 500 pixels. This is low res mobile related overrides*/
@@ -2196,6 +2224,9 @@ img#wpstats {
 	}
 	#ourstory p {
 		margin-right: 0;
+	}
+	#followuse li {
+		width: 99%;
 	}
 }
 
@@ -2407,7 +2438,7 @@ img#wpstats {
 	body .site {
 		margin-bottom: 48px;
 		margin-bottom: 3.428571429rem;
-		max-width: 1204px;
+		max-width: 1281px;
 	}
 	body.custom-background-empty {
 		background-color: #fff;
