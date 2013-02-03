@@ -252,23 +252,19 @@ input[type="button"],
 input[type="reset"],
 article.post-password-required input[type=submit],
 li.bypostauthor cite span {
-	padding: 6px 10px;
-	padding: 0.428571429rem 0.714285714rem;
-	font-size: 11px;
-	font-size: 0.785714286rem;
+	padding: 6px 40px !important;
+	
+	font-size: 24px;
+	
 	line-height: 1.428571429;
+	font-family: hero, sans-serif;
+	color: rgb(0, 0, 0);
+	background-color: #ca006c;
 	font-weight: normal;
-	color: #ca006c;
-	background-color: #e6e6e6;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
-	background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
-	border: 1px solid #d2d2d2;
-	border-radius: 3px;
-	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+	text-transform: uppercase;
+	border: none;
+	border-radius: 5px !important;
+	
 }
 .menu-toggle,
 button,
@@ -287,14 +283,9 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 article.post-password-required input[type=submit]:hover {
-	color: #5e5e5e;
-	background-color: #ebebeb;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+	color: #000;
+	background-color: #ca006c;
+	
 }
 .menu-toggle:active,
 .menu-toggle.toggled-on,
@@ -302,15 +293,8 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	color: #757575;
-	background-color: #e1e1e1;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: -ms-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: -webkit-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: -o-linear-gradient(top, #ebebeb, #e1e1e1);
-	background-image: linear-gradient(top, #ebebeb, #e1e1e1);
-	box-shadow: inset 0 0 8px 2px #c6c6c6, 0 1px 0 0 #f4f4f4;
+	color: #000;
+	background-color: #ca006c
 	border: none;
 }
 li.bypostauthor cite span {
@@ -637,10 +621,13 @@ a:hover {
 #menu-mm1 > li {
 	background: #fff url(img/nav-sep.png) no-repeat 100% 50%;
 	padding-right: 13px;
+	font-family: hero, sans-serif;
+	text-transform: uppercase;
 }
 #menu-mm1 > li:last-child {
 	background: none;
 	padding-right: 0;
+	
 }
 
 /* Banner */
@@ -797,6 +784,7 @@ article.sticky .featured-post {
 	font-size: 21px;
 	font-size: 1.5rem;
 	line-height: 1.5;
+	font-family: hero, sans-serif;
 }
 .entry-content h2,
 .comment-content h2,
@@ -804,18 +792,23 @@ article.sticky .featured-post {
 	font-size: 18px;
 	font-size: 1.285714286rem;
 	line-height: 1.6;
+	font-family: hero, sans-serif;
+	color: #ca006c;
 }
 .entry-content h3,
 .comment-content h3 {
 	font-size: 16px;
 	font-size: 1.142857143rem;
 	line-height: 1.846153846;
+	font-family: hero-light, sans-serif;
 }
 .entry-content h4,
 .comment-content h4 {
 	font-size: 14px;
 	font-size: 1rem;
 	line-height: 1.846153846;
+	font-family: georgia, sans-serif;
+	color: #ca006c
 }
 .entry-content h5,
 .comment-content h5 {
@@ -828,6 +821,8 @@ article.sticky .featured-post {
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 1.846153846;
+	color: #ca006c;
+	vertical-align: none !important;
 }
 .entry-content p,
 .entry-summary p,
@@ -1495,11 +1490,23 @@ a.comment-edit-link:hover {
 
 .sub-nav h1.entry-title {
 	text-transform:uppercase;
-	background-color: #fad3dc;
-	color: #ca006c;
+	background-color: #ca006c;
+	color: #ffffff;
 	font-size: 2.5rem;
 	padding: 18px 24px;
 	font-family: Hero, sans-serif; 
+}
+
+.homebaker .sub-nav h1 {
+	color: #005696;
+}
+
+.social .sub-nav h1 {
+	color: #00b6de;
+}
+
+.wedding .sub-nav h1 {
+	color: #f7aabd;
 }
 
 .sub-nav h2 {
@@ -1690,6 +1697,33 @@ a.comment-edit-link:hover {
 	width: 200px;
 }
 
+#quote {
+	display: block;
+	float: left;
+	width: 90%;
+	background: #fff url(quote.png) no-repeat 0% 0%;
+	min-height: 250px;
+}
+
+#quote p {
+	line-height: 1.2;
+	vertical-align: middle;
+	font-family: hero, sans-serif;
+	text-align: left;
+	color: #000;
+	font-size: 20px !important;
+	padding: 30px 30px 30px 120px; 
+	letter-spacing: -1px;
+}
+
+#logo1 {
+	float: left;
+}
+
+#logo2 {
+	float: right:
+}
+
 #followus {
 	float: right;
 	width: 48%;
@@ -1726,6 +1760,43 @@ a.comment-edit-link:hover {
 	background-position: 0 -300px;
 }
 
+
+#followuse {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+#followuse li {
+	float: left;
+	width: 24%;
+	margin-left: 0;
+	list-style: none;
+	text-align: left;
+	background: #fff url(follow-us.png) no-repeat;
+}
+
+#followuse li a {
+	font-family: Hero, sans-serif;
+	color: #939598;
+	float: left;
+	padding: 14px 20px 18px 80px;
+	text-decoration: none;
+	min-height: 50px;
+}
+
+
+#followuse .facebook {
+	background-position: 0 -100px;
+}
+
+#followuse .linkedin {
+	background-position: 0 -200px;
+}
+
+#followuse .email {
+	background-position: 0 -300px;
+}
 footer {
 	background-color: #ca006c;
 	color: #fff;
@@ -1804,61 +1875,127 @@ footer a {
 #fsignup fieldset {
 	padding: 0;
 	border: 0;
+	background-color: #ca006c;
+
 }
 
 #fsignup legend {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-family: georgia, sans-serif;
+	text-transform: none;
 	margin: 0 0 16px 0;
 	border: 0;
 }
 
 #fsignup input {
-	width: 150px !important;
+	width: 160px !important;
+	padding: 5px;
 }
+#fsignup label {
+	font-family: georgia, sans-serif;
+	width: 110px !important;
+	padding: 7px;
+}
+
+#fsignup input[type="submit"] {
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border-radius: 50px;
+	float: left;
+	width: 100% !important;
+}
+
+#form5 {
+	float: left;
+	width: 100%;
+}
+
 .fm-form legend {
-	font family: hero, sans-serif;
+	font-family: hero, sans-serif;
+	text-transform: uppercase;
+	color: #ca006c;
+	font-size: 24px;
+	margin: 50px 0px 0px 20px;
+
 }
 
 .fm-form fieldset {
 	background-color: #f6f6f6;
 	color: #636466;
 	border: none;
+	padding: 0px, 20px, 20px, 0px;
 }
 
+.fm-form label {
+	border:1px solid rgb(202, 0, 108);
+	margin-right:0em;
+	background-color: #fff;
+	border-right: none;
+	border-radius: 2px 0px 0px 2px;
+	padding: 2px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 10px;
+	width: 200px !important;
+}
 .fm-form input {
-	border-radius: 2px 2px 2px 2px;
+	border-radius: 0px 2px 2px 0px;
+	border-left: none;
+	padding: 6px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.fm-form select {
+	width: 312px !important;
+	padding: 6px;
+	colour: #ca006c;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.fm-form input[type="checkbox"] {
+	margin-top: 15px;
+}
 	
-}
-
-.fm-form input textarea {
-	width:50% !important;
-}
-
-
-
 .buy-list .eshop li {
 	margin: 0;
 	float: left;
 	width: 180px;
-	height: 220px;
+	height: 280px;
 	clear: none;
 	border: 1px solid #e0e0e0;
-	border-radius: 4px;
-	margin: 0 0 4px 4px;
+	border-radius: 6px;
+	margin: 0 0 8px 8px;
+	box-shadow: 0px 1px 4px rgba (0, 0, 0, 0.2);
+	}
+
+.buy-list .eshop li .itemref img {
+	float: left;
+	margin: 4px 0 0;
+	box-shadow: none !important;
+	padding: 0px 0px 0px 15px !important;
+	
 }
 
 .buy-list .eshop li .itemref {
 	font-size: 1em;
-	display: block;
 	height: 3em;
 	margin: 4px;
 	text-align: center;
-	
 }
 
-.buy-list .eshop li .itemref img {
-	float: above;
-	margin: 4px 0 0;
+
+
+.buy-list .eshop .ep_price {
+	color: #ca006c;
+	font-weight: bold;
+	padding: 5px;
+	display: inline-block;
+	vertical-align: 0px;
 }
+
 
 .sub-nav .eshop thead th {
 	text-align: left;
@@ -1926,7 +2063,7 @@ img#wpstats {
 	.menu-toggle {
 		font-size: 1rem;
 		font-weight: 900;
-		color: #fff;
+		color: #000;
 		background-color: #ca006c;
 		background-image: none;
 	}
@@ -2084,7 +2221,7 @@ img#wpstats {
 		text-transform: none;
 	}
 	.main-navigation li ul li a:hover {
-		background: #fff;
+		background: #ffffff;
 		color: #ca006c;
 	}
 	.main-navigation .current-menu-item > a,
@@ -2092,7 +2229,9 @@ img#wpstats {
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
 		color: #ca006c;
-		
+	}
+	.main-navigation li .current_page_item > a {
+		color: #fff;	
 	}
 	.menu-mm1-container {
 		border-bottom: 1px solid #ededed;
