@@ -457,3 +457,11 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
+
+add_filter('eshop_rename_ship_zone','myzones');
+function myzones($zones){
+  $zones[1]='Mainland-Britain';
+  $zones[2]='Scottish-Lowlands';
+  $zones[3]='Scottish-Highlands';
+return $zones;
+}
