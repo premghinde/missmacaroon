@@ -77,6 +77,11 @@ function twentytwelve_setup() {
 }
 add_action( 'after_setup_theme', 'twentytwelve_setup' );
 
+add_action('eshop_send_customer_email','myeshop_copy_email',10,4);
+function myeshop_copy_email($csubject, $this_email, $headers, $array){
+  $myemail='info@missmacaroon.co.uk';
+  wp_mail($myemail, $csubject, $this_email,$headers);
+}
 /**
  * Adds support for a custom header image.
  */
