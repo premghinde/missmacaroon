@@ -14,7 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-/* =Notes
+buy/* =Notes
 --------------------------------------------------------------
 This stylesheet uses rem values with a pixel fallback. The rem
 values (and line heights) are calculated using two variables:
@@ -1487,6 +1487,10 @@ a.comment-edit-link:hover {
 	list-style: none;
 }
 
+.sub-nav #subnav .pagenav .children {
+	display: none;
+}
+
 .sub-nav #subnav li a {
 	display: block;
 	height: 160px;
@@ -1537,7 +1541,18 @@ a.comment-edit-link:hover {
 	margin-left: 24px;
 	font-family: Georgia, serif;
 }
-
+.page-item-7 {
+	background: transparent url(img/sidelink/item-7.png) no-repeat 0 0;
+}
+.page-item-17 {
+	background: transparent url(img/sidelink/item-17.png) no-repeat 0 0;
+}
+.page-item-20 {
+	background: transparent url(img/sidelink/item-20.png) no-repeat 0 0;
+}
+.page-item-21 {
+	background: transparent url(img/sidelink/item-21.png) no-repeat 0 0;
+}
 .page-item-33 {
 	background: transparent url(img/sidelink/item-33.png) no-repeat 0 0;
 }
@@ -1557,7 +1572,12 @@ a.comment-edit-link:hover {
 .page-item-41 {
 	background: transparent url(img/sidelink/item-41.png) no-repeat 0 0;
 }
-
+.page-item-43 {
+	background: transparent url(img/sidelink/item-33.png) no-repeat 0 0;
+}
+.page-item-45 {
+	background: transparent url(img/sidelink/item-33.png) no-repeat 0 0;
+}
 .page-item-46 {
 	background: transparent url(img/sidelink/item-46.png) no-repeat 0 0;
 }
@@ -1573,7 +1593,13 @@ a.comment-edit-link:hover {
 .page-item-52 {
 	background: transparent url(img/sidelink/item-52.png) no-repeat 0 0;
 }
-
+.page-item-55 {
+	background: transparent url(img/sidelink/item-55.png) no-repeat 0 0;
+}.page-item-57 {
+	background: transparent url(img/sidelink/item-57.png) no-repeat 0 0;
+}.page-item-59 {
+	background: transparent url(img/sidelink/item-59.png) no-repeat 0 0;
+}
 .page-item-61 {
 	background: transparent url(img/sidelink/item-61.png) no-repeat 0 0;
 }
@@ -1585,15 +1611,29 @@ a.comment-edit-link:hover {
 .page-item-64 {
 	background: transparent url(img/sidelink/item-64.png) no-repeat 0 0;
 }
+.page-item-65 {
+	background: transparent url(img/sidelink/item-65.png) no-repeat 0 0;
+}
+
 
 .page-item-66 {
 	background: transparent url(img/sidelink/item-66.png) no-repeat 0 0;
 }
-
+.page-item-67 {
+	background: transparent url(img/sidelink/item-67.png) no-repeat 0 0;
+}
 .page-item-68 {
 	background: transparent url(img/sidelink/item-68.png) no-repeat 0 0;
 }
-
+.page-item-69 {
+	background: transparent url(img/sidelink/item-69.png) no-repeat 0 0;
+}
+.page-item-71 {
+	background: transparent url(img/sidelink/item-71.png) no-repeat 0 0;
+}
+.page-item-73 {
+	background: transparent url(img/sidelink/item-73.png) no-repeat 0 0;
+}
 .page-item-75 {
 	background: transparent url(img/sidelink/item-75.png) no-repeat 0 0;
 }
@@ -1617,7 +1657,9 @@ a.comment-edit-link:hover {
 .page-item-86 {
 	background: transparent url(img/sidelink/item-86.png) no-repeat 0 0;
 }
-
+.page-item-102 {
+	background: transparent url(img/sidelink/item-102.png) no-repeat 0 0;
+}
 .page-item-363 {
 	background: transparent url(img/sidelink/item-363.png) no-repeat 0 0;
 }
@@ -2363,6 +2405,7 @@ img#wpstats {
 		padding: 0.571428571rem 0.714285714rem;
 		white-space: normal;
 		text-transform: none;
+		width: 120px;
 	}
 	.main-navigation li ul li a:hover {
 		background: #ffffff;
